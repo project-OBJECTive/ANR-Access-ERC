@@ -1,0 +1,51 @@
+
+# Configurations about the catalog
+catalog:
+
+  # The name of the catalog folder
+  # OVERWRITTEN IN CASE OF OBJECTIVE_MODE=pipeline (set by makefile)
+  folder_name: 1839-03-18_Curiosités
+
+  # At what page begins the object list
+  # OVERWRITTEN IN CASE OF OBJECTIVE_MODE=pipeline (set by makefile)
+  object_list_begin_page: 0
+
+  # At what page ends the object list
+  # OVERWRITTEN IN CASE OF OBJECTIVE_MODE=pipeline (set by makefile)
+  object_list_end_page: null
+
+  # The name of the spacy model to do classic NLP with
+  spacy_model: fr_dep_news_trf
+
+  # Catalog languages
+  language: french
+
+# Configuration about the LLM to use 
+model:
+
+  # LLM provider: openai / ollama / mistralai
+  llm_provider: mistralai
+
+  # Execution mode with distant LLM (OpenAI or MistralAI): direct / batch
+  mode: batch
+
+  # Vision model for vision task (transcription): llama3.2-vision / gpt-4o / pixtral-large-latest
+  vision_model: pixtral-large-latest
+
+  # Language model for various tasks (object list, information extraction, ...): gpt-4o / phi4 / mistral-large-latest
+  language_model: mistral-large-latest
+
+  # Local model for various tasks (used with Ollama)
+  local_model: phi4
+
+  # Number of page parsed at once to extract the object list (for the object-list step)
+  pages_parsed_at_once: 10
+
+  # Number of object given at once to LLM to extraction information from (for the table-raw step)
+  object_number_by_prompt: 15
+
+  # Cooldown to use locally to not overheat computer (in seconds)
+  local_cooldown: 4
+
+  # Author details
+  author_details: True

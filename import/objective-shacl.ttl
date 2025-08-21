@@ -1,0 +1,1129 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix frbroo: <https://www.iflastandards.info/fr/frbr/frbroo#> .
+@prefix geov: <https://ontome.net/ontology/> .
+@prefix sdh: <https://sdhss.org/ontology/core/> .
+@prefix sdh-slc: <https://sdhss.org/ontology/social-life-core/> .
+@prefix sdh-shacl: <https://sdhss.org/shacl/profiles/> .
+@prefix sdh-act: <https://sdhss.org/ontology/human-activity/> .
+@prefix crm-sup: <https://sdhss.org/ontology/crm-supplement/> .
+@prefix root: <http://geovistory.org/resource/> .
+
+
+sdh-shacl:crm_E56_shape a sh:NodeShape ;
+    sh:targetClass crm:E56 ;
+    sh:name "Language" ;
+
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:name "Comment" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm:P72 ;
+        ] ;
+        sh:name "Has Language" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C20_shape a sh:NodeShape ;
+    sh:targetClass sdh:C20 ;
+    sh:name "Entity Quality Type" ;
+
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:name "Comment" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P23 ;
+        ] ;
+        sh:name "Has Quality Type" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm-sup_C22_shape a sh:NodeShape ;
+    sh:targetClass crm-sup:C22 ;
+    sh:name "Currency" ;
+
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:name "Comment" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm-sup:P16 ;
+        ] ;
+        sh:name "Has Currency" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm-sup_C24_shape a sh:NodeShape ;
+    sh:targetClass crm-sup:C24 ;
+    sh:name "Identifier Type" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm-sup:P19 ;
+        ] ;
+        sh:name "Has Identifier Type" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C16_shape a sh:NodeShape ;
+    sh:targetClass sdh:C16 ;
+    sh:name "Epistemic Location Type" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P48 ;
+        ] ;
+        sh:name "Has Intentional Expression Identifing Type" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P19 ;
+        ] ;
+        sh:name "Has Location Type" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C57_shape a sh:NodeShape ;
+    sh:targetClass sdh:C57 ;
+    sh:name "Quantifiable Quality Of A Spatio Temporal Phenomenon" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P23 ;
+        sh:name "Has Quality Type" ;
+        sh:class sdh:C57 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P35 ;
+        sh:name "Has Quality Dimension" ;
+        sh:class crm-sup:C11 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P23 ;
+        ] ;
+        sh:name "Has Quality Type" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P22 ;
+        ] ;
+        sh:name "Has Quantifiable Quality" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh-slc_C2_shape a sh:NodeShape ;
+    sh:targetClass sdh-slc:C2 ;
+    sh:name "Actor Social Quality" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P12 ;
+        ] ;
+        sh:name "Is Participation In The Quality Of" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm-sup_C3_shape a sh:NodeShape ;
+    sh:targetClass crm-sup:C3 ;
+    sh:name "Activity Type" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm-sup:P9 ;
+        ] ;
+        sh:name "Has Activity Type" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C72_shape a sh:NodeShape ;
+    sh:targetClass sdh:C72 ;
+    sh:name "Quantifiable Quality Of An Intentional Event Type" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P90 ;
+        ] ;
+        sh:name "Has Quantifiable Quality Of And Intentional Event Type" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C13_shape a sh:NodeShape ;
+    sh:targetClass sdh:C13 ;
+    sh:name "Geographical Place" ;
+
+    sh:property [
+        sh:path owl:sameAs ;
+        sh:name "Same As" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P6 ;
+        ] ;
+        sh:name "Took Place At" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P6 ;
+        ] ;
+        sh:name "Took Place At" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P15 ;
+        ] ;
+        sh:name "Is Localized At" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C53_shape a sh:NodeShape ;
+    sh:targetClass sdh:C53 ;
+    sh:name "General Technique" ;
+
+    sh:property [
+        sh:path owl:sameAs ;
+        sh:name "Same As" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P3 ;
+        sh:name "Has Note" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-act:P20 ;
+        ] ;
+        sh:name "Was Or Is Composed Of Objects Produced With" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm_E52_shape a sh:NodeShape ;
+    sh:targetClass crm:E52 ;
+    sh:name "Time Span" ;
+
+    sh:property [
+        sh:path crm:P82a ;
+        sh:name "Begin Of The Begin" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P82b ;
+        sh:name "End Of The End" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P3 ;
+        sh:name "Has Note" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm:P4 ;
+        ] ;
+        sh:name "Has Time Span" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C4_shape a sh:NodeShape ;
+    sh:targetClass sdh:C4 ;
+    sh:name "Physical Human Made Thing Type" ;
+
+    sh:property [
+        sh:path owl:sameAs ;
+        sh:name "Same As" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P66 ;
+        ] ;
+        sh:name "Was Or Is Composed Of Object Of Type" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm_E39_shape a sh:NodeShape ;
+    sh:targetClass crm:E39 ;
+    sh:name "Actor" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm:P14 ;
+        ] ;
+        sh:name "Carried Out By" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P17 ;
+        ] ;
+        sh:name "Is Location Of" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P9 ;
+        ] ;
+        sh:name "Is Right Of" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C15_shape a sh:NodeShape ;
+    sh:targetClass sdh:C15 ;
+    sh:name "Epistemic Location Of A Physical Thing" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P15 ;
+        sh:name "Is Localized At" ;
+        sh:class sdh:C13 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P17 ;
+        sh:name "Is Location Of" ;
+        sh:class crm:E39 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P17 ;
+        sh:name "Is Location Of" ;
+        sh:class crm:E21 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P48 ;
+        sh:name "Has Intentional Expression Identifing Type" ;
+        sh:class sdh:C16 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P17 ;
+        sh:name "Is Location Of" ;
+        sh:class crm:E24 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P19 ;
+        sh:name "Has Location Type" ;
+        sh:class sdh:C16 ;
+    ] ;
+
+    .
+
+sdh-shacl:crm_E21_shape a sh:NodeShape ;
+    sh:targetClass crm:E21 ;
+    sh:name "Person" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P10 ;
+        ] ;
+        sh:name "Is Participation Of" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P17 ;
+        ] ;
+        sh:name "Is Location Of" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P4 ;
+        ] ;
+        sh:name "Is Occupation Of" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh-slc_C9_shape a sh:NodeShape ;
+    sh:targetClass sdh-slc:C9 ;
+    sh:name "Occupation Peit" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P5 ;
+        ] ;
+        sh:name "Is About" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm_E24_shape a sh:NodeShape ;
+    sh:targetClass crm:E24 ;
+    sh:name "Physical Human Made Thing" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm-sup:P20 ;
+        sh:name "Same As External Identifier" ;
+        sh:class crm:E42 ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P128 ;
+        sh:name "Carries" ;
+        sh:class frbroo:F2 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P17 ;
+        ] ;
+        sh:name "Is Location Of" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm:P108 ;
+        ] ;
+        sh:name "Has Produced" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P8 ;
+        ] ;
+        sh:name "Is Subjection Of" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm_E42_shape a sh:NodeShape ;
+    sh:targetClass crm:E42 ;
+    sh:name "Identifier" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P1 ;
+        sh:name "Is Identified By" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm-sup:P19 ;
+        sh:name "Has Identifier Type" ;
+        sh:class crm-sup:C24 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm-sup:P20 ;
+        ] ;
+        sh:name "Same As External Identifier" ;
+    ] ;
+
+    .
+
+sdh-shacl:frbroo_F2_shape a sh:NodeShape ;
+    sh:targetClass frbroo:F2 ;
+    sh:name "Expression" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P22 ;
+        sh:name "Has Quantifiable Quality" ;
+        sh:class sdh:C28 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath geov:P27 ;
+        ] ;
+        sh:name "Is Mentioned In" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm:P128 ;
+        ] ;
+        sh:name "Carries" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm_E7_shape a sh:NodeShape ;
+    sh:targetClass crm:E7 ;
+    sh:name "Activity" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P82a ;
+        sh:name "Begin Of The Begin" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P82b ;
+        sh:name "End Of The End" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm-sup:P9 ;
+        sh:name "Has Activity Type" ;
+        sh:class crm-sup:C3 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P22 ;
+        sh:name "Has Quantifiable Quality" ;
+        sh:class sdh:C57 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P6 ;
+        sh:name "Took Place At" ;
+        sh:class sdh:C13 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath geov:P26 ;
+        ] ;
+        sh:name "Mentions" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P5 ;
+        ] ;
+        sh:name "Is Part Of" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P11 ;
+        ] ;
+        sh:name "Is Participation In" ;
+    ] ;
+
+    .
+
+sdh-shacl:geov_C28_shape a sh:NodeShape ;
+    sh:targetClass geov:C28 ;
+    sh:name "Mentioning" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path geov:P26 ;
+        sh:name "Mentions" ;
+        sh:class crm:E7 ;
+    ] ;
+
+    sh:property [
+        sh:path geov:P27 ;
+        sh:name "Is Mentioned In" ;
+        sh:class frbroo:F2 ;
+    ] ;
+
+    sh:property [
+        sh:path geov:P26 ;
+        sh:name "Mentions" ;
+        sh:class sdh:C52 ;
+    ] ;
+
+    sh:property [
+        sh:path geov:P26 ;
+        sh:name "Mentions" ;
+        sh:class sdh:C46 ;
+    ] ;
+
+    .
+
+sdh-shacl:crm_E12_shape a sh:NodeShape ;
+    sh:targetClass crm:E12 ;
+    sh:name "Production" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P14 ;
+        sh:name "Carried Out By" ;
+        sh:class crm:E39 ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P108 ;
+        sh:name "Has Produced" ;
+        sh:class crm:E24 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P6 ;
+        sh:name "Took Place At" ;
+        sh:class sdh:C13 ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P4 ;
+        sh:name "Has Time Span" ;
+        sh:class crm:E52 ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P108 ;
+        sh:name "Has Produced" ;
+        sh:class sdh:C52 ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh-slc_C14_shape a sh:NodeShape ;
+    sh:targetClass sdh-slc:C14 ;
+    sh:name "Holding A Right Or Obligation" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P8 ;
+        sh:name "Is Subjection Of" ;
+        sh:class crm:E24 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P9 ;
+        sh:name "Is Right Of" ;
+        sh:class crm:E39 ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C28_shape a sh:NodeShape ;
+    sh:targetClass sdh:C28 ;
+    sh:name "Quantifiable Quality" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P23 ;
+        sh:name "Has Quality Type" ;
+        sh:class sdh:C20 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P35 ;
+        sh:name "Has Quality Dimension" ;
+        sh:class crm-sup:C11 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P22 ;
+        ] ;
+        sh:name "Has Quantifiable Quality" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P22 ;
+        ] ;
+        sh:name "Has Quantifiable Quality" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm-sup_C11_shape a sh:NodeShape ;
+    sh:targetClass crm-sup:C11 ;
+    sh:name "Numeric Dimension" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P90 ;
+        sh:name "Has Value" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P35 ;
+        ] ;
+        sh:name "Has Quality Dimension" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P35 ;
+        ] ;
+        sh:name "Has Quality Dimension" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh-slc_C15_shape a sh:NodeShape ;
+    sh:targetClass sdh-slc:C15 ;
+    sh:name "Participation" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P12 ;
+        sh:name "Is Participation In The Quality Of" ;
+        sh:class sdh-slc:C2 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P10 ;
+        sh:name "Is Participation Of" ;
+        sh:class crm:E21 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P11 ;
+        sh:name "Is Participation In" ;
+        sh:class crm:E7 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P11 ;
+        sh:name "Is Participation In" ;
+        sh:class sdh-slc:C37 ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh-slc_C8_shape a sh:NodeShape ;
+    sh:targetClass sdh-slc:C8 ;
+    sh:name "Occupation Teen" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P5 ;
+        sh:name "Is About" ;
+        sh:class sdh-slc:C9 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P4 ;
+        sh:name "Is Occupation Of" ;
+        sh:class crm:E21 ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C52_shape a sh:NodeShape ;
+    sh:targetClass sdh:C52 ;
+    sh:name "Physical Set" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P1 ;
+        sh:name "Is Identified By" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P22 ;
+        sh:name "Has Quantifiable Quality" ;
+        sh:class sdh:C28 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P66 ;
+        sh:name "Was Or Is Composed Of Object Of Type" ;
+        sh:class sdh:C4 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-act:P20 ;
+        sh:name "Was Or Is Composed Of Objects Produced With" ;
+        sh:class sdh:C53 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P5 ;
+        ] ;
+        sh:name "Is About" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath geov:P26 ;
+        ] ;
+        sh:name "Mentions" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm:P108 ;
+        ] ;
+        sh:name "Has Produced" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm:P12 ;
+        ] ;
+        sh:name "Occured In The Presence Of" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath crm:P12 ;
+        ] ;
+        sh:name "Occured In The Presence Of" ;
+    ] ;
+
+    .
+
+sdh-shacl:crm_E33_shape a sh:NodeShape ;
+    sh:targetClass crm:E33 ;
+    sh:name "Linguistic Object" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P190 ;
+        sh:name "Has Symbolic Content" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P72 ;
+        sh:name "Has Language" ;
+        sh:class crm:E56 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh-slc:P5 ;
+        sh:name "Is About" ;
+        sh:class sdh:C52 ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C46_shape a sh:NodeShape ;
+    sh:targetClass sdh:C46 ;
+    sh:name "Intentional Expression" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P5 ;
+        sh:name "Is Part Of" ;
+        sh:class crm:E7 ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P12 ;
+        sh:name "Occured In The Presence Of" ;
+        sh:class sdh:C52 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath geov:P26 ;
+        ] ;
+        sh:name "Mentions" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P43 ;
+        ] ;
+        sh:name "Has Setting" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh-slc_C37_shape a sh:NodeShape ;
+    sh:targetClass sdh-slc:C37 ;
+    sh:name "Economic Transaction" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P43 ;
+        sh:name "Has Setting" ;
+        sh:class sdh:C46 ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P12 ;
+        sh:name "Occured In The Presence Of" ;
+        sh:class sdh:C52 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh-slc:P11 ;
+        ] ;
+        sh:name "Is Participation In" ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P89 ;
+        ] ;
+        sh:name "Is Quantifiable Quality Of" ;
+    ] ;
+
+    .
+
+sdh-shacl:sdh_C71_shape a sh:NodeShape ;
+    sh:targetClass sdh:C71 ;
+    sh:name "Quantifiable Quality Of An Intentional Event" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P35 ;
+        sh:name "Has Quality Dimension" ;
+        sh:class crm-sup:C21 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P89 ;
+        sh:name "Is Quantifiable Quality Of" ;
+        sh:class sdh-slc:C37 ;
+    ] ;
+
+    sh:property [
+        sh:path sdh:P90 ;
+        sh:name "Has Quantifiable Quality Of And Intentional Event Type" ;
+        sh:class sdh:C72 ;
+    ] ;
+
+    .
+
+sdh-shacl:crm-sup_C21_shape a sh:NodeShape ;
+    sh:targetClass crm-sup:C21 ;
+    sh:name "Monetary Amount" ;
+
+    sh:property [
+        sh:path rdfs:label ;
+        sh:name "Label" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm:P90 ;
+        sh:name "Has Value" ;
+        sh:datatype xsd:string ;
+    ] ;
+
+    sh:property [
+        sh:path crm-sup:P16 ;
+        sh:name "Has Currency" ;
+        sh:class crm-sup:C22 ;
+    ] ;
+
+    sh:property [
+        sh:path [
+            sh:inversePath sdh:P35 ;
+        ] ;
+        sh:name "Has Quality Dimension" ;
+    ] ;
+
+    .

@@ -1,0 +1,878 @@
+# This file lists all replacement to make in the extraction pipeline.
+# Words at left are those found/extracted by the LLM, and those at right are those which should be.
+
+# Here are corrections for all categories (object type, material and technique, origins, period, author)
+all:
+  bois acajou: acajou
+  bois d'acajou: acajou
+  bois d’acajou: acajou
+  bois cèdre: cèdre
+  bois ébène: ébène
+  bois d'ébène: ébène
+  bois de santal: santal
+  bois de noyer: noyer
+  bois de chêne: chêne
+  bois d'érable: érable
+  bois de bambou: bambou
+  buste: sculpture
+  christ sur croix: crucifix
+  statue: sculpture
+  statuette: sculpture
+  alabaster: albâtre
+  box: boîte
+  bowl: bol
+  bucket: seau
+  chest: coffret
+  china: chine
+  columns: colonne
+  copper: cuivre
+  cover: couvercle
+  cup: tasse
+  drawing: dessin
+  desk: bureau
+  earthenware: faïence
+  enamel: émail
+  e-mail: émail
+  glass: verre
+  gold: or
+  gothic: gothique
+  ivory: ivoire
+  jug: burette
+  object: objet
+  petrified wood: bois pétrifié
+  porcelain: porcelaine
+  saxony: saxe
+  shell: écaille
+  silver: argent
+  snuffbox: tabatière
+  spoon: cuillère
+  stone: pierre
+  teapot: théière
+  tray: plateau
+  colored: coloré
+  fixés: fixé
+  deux pistolet: pistolet
+  poussas: poussa
+  sept belles plaque: plaque
+  cuillière: cuillère
+
+# Here are corrections to apply only for object types
+object_type:
+  bas-relief rond: bas-relief
+  coupe ovale: coupe
+  petit bocal: bocal
+  petit vase: vase
+  verre de venise: verre
+  verre à filet blancs: verre
+  coupe ou cuvette: cuvette
+  deux petites tête de satyre: sculpture
+  etui: étui
+  ivoire sculpté: sculpture
+  peinture sur verre: peinture
+  pitong: pytong
+  cuiller: cuillère
+  bols: bol
+  portrait miniatures: portrait
+  chasseur et chien: peinture
+  chienne: chien
+  chiens: chien
+  soucoupes: soucoupe
+  vases: vase
+  flambeaux: flambeau
+  groupe de figure: figure
+  chaise volantes: chaise
+  figures: figure
+  saucer: saucier
+  bass-relief: bas-relief
+  pièces: pièce
+  seaux: sceau
+  hauts relief: hauts-relief
+  aigles: aigle
+  platin: platine
+  pi-tong: pytong
+  saint jean .: saint jean
+  groupes: groupe
+  christ en croix: crucifix
+  bust: buste
+  grand plat rond: plat
+  plats: plat
+  mirror: miroir
+  sugar bowl: bol
+  corbeilles: corbeille
+  paysage avec figure: paysage
+  vue: peinture
+  paire de flambeau: flambeau
+  paire de chenet: chenet
+  paire d'applique: applique
+  portrait de chien: portrait
+  grand plat creux: plat
+  piedestaux: piedestal
+  le christ en croix: crucifix
+  grand plat: plat
+  paire de pistolet: pistolet
+  assiettes: assiette
+  manuscrits: manuscrit
+  manuscrites: manuscrit
+  figurines: figurine
+  
+# Here are corrections to apply only for material and techniques
+material_technique:
+  émaille: émail
+  verre à pâte: verre
+  faience: faïence
+  bois racine: racine
+  lapis lazulli: lapis lazuli
+  turquoises: turquoise
+  terre de bocaro: terre cuite
+  terre émaillée: faïence
+  sévigné: broche
+  décoré: ""
+  décorée: ""
+  bronze doré: "bronze, doré"
+  manuscrits: manuscrit
+  manuscrites: manuscrit
+  cuivre doré: "cuivre, doré"
+  bois sculpté: "bois, sculpté"
+  or émaillé: "or, émaillé"
+  bois sculpté et doré: "bois, sculpté, doré"
+  bronze ciselé et doré: "bronze, ciselé, doré"
+  ivoire sculpté: "ivoire, sculpté"
+  or ciselé: "or, ciselé"
+  émail de couleur: émail
+  peinture en émail de couleur: émail
+  argent repoussé: "argent, repoussé"
+  bois doré: "bois, doré"
+  argent repoussé et ciselé: "argent, repoussé, ciselé"
+  bronze ciselé: "bronze, ciselé"
+  argent ciselé: "argent, ciselé"
+  émail peint: émail
+  porcelaine d'ancien sèvres: porcelaine
+  émail cloisonné: "émail, cloisonné"
+  bronze dorés: "bronze, doré"
+  bronze doré au mat: "bronze, doré"
+  chêne sculpté: "chêne, sculpté"
+  grisaille rehaussée d'or: "grisaille, rehaussé, or"
+  filigrane d'argent: "filigrane, argent"
+  bronze doré ou moulu: "bronze, doré, or"
+  cuivre doré et émaillé: "cuivre, doré, émaillé"
+  bronze vert: bronze
+  bois de noyer sculpté: "noyer, sculpté"
+  bronze doré or moulu: "bronze, doré, or"
+  argent repoussé et doré: "argent, repoussé, doré"
+  cuivre émaillé: "cuivre, émaillé"
+  tasse avec soucoupe: "tasse, soucoupe"
+  bois de chêne sculpté: "chêne, sculpté"
+  noyer sculpté: "noyer, sculpté"
+  or ciselé et émaillé: "or, ciselé, émaillé"
+  cuivre champlevé et émaillé: "cuivre, émail, champlevé"
+  damas de soie rouge: soie
+  argent émaillé: "argent, émaillé"
+  fer forgé: "fer, forgé"
+  grisaille teintée: grisaille, teinté
+  émaillées: émaillé
+  verre craquelé: "verre, craquelé"
+  cuivre battu: "cuivre, battu"
+  ivoire gravé: ivoire, gravé
+  verre émaillé: verre, émaillé
+  filigrane d'or: filigrane, or
+  broderie d'or: broderie, or
+  satin brodé: satin, brodé
+  argent niellé: argent, niellé
+  émaillée: émaillé
+  gravé et doré: gravé, doré
+  gilded bronze: bronze, doré
+  argent gravé: argent, gravé
+  argent ciselé et doré: argent, ciselé, doré
+  bronze ciselés et dorés: bronze, ciselé, doré
+  dorés: doré
+  gravées: gravé
+  peinture en grisaille: peinture, grisaille
+  bronze ciselé et doré au mat: bronze, ciselé, doré
+  argent battu: argent, battu
+  gravée: gravé
+  décor d'or: or
+  porcelaine dorée: porcelaine, doré
+  cuivre argenté: cuivre, argenté
+  sculptée: sculpté
+  bronze patiné: bronze, patination
+  fer damasquiné d'or et d'argent: fer damasquiné, or, argent
+  soie brodée: soie, brodé
+  fer gravé: fer, gravé
+  laque burgauté: laque, burgauté
+  cadre doré: doré
+  bois de rose marqueté: bois de rose, marqueterie
+  drap d'or: drap, or
+  vermeil repoussé et ciselé: vermeil, repoussé, ciselé
+  ciselé et doré: ciselé, doré
+  or gravé: or, gravé
+  ciselés: ciselé
+  porcelaine craquelée: porcelaine, craquelé
+  repoussé et ciselé: repoussé, ciselé
+  argent et vermeil: argent, vermeil
+  cuivre ciselé: cuivre, ciselé
+  cuivre dorés: cuivre, doré
+  damasquiné d'or: fer damasquiné, or
+  white marble: marbre blanc
+  gravés: gravé
+  cuivre repoussé et doré: cuivre, repoussé, doré
+  porcelaine décorée: porcelaine, décorée
+  cuivre ciselé et doré: cuivre, ciselé, doré
+  doré et émaillé: doré, émaillé
+  cuivre poli: cuivre, poli
+  acier poli: acier, poli
+  bois peint: bois, peint
+  filigrané d'or: filigrane, or
+  bois satiné: bois, satiné
+  couverte marbrée: couverte, marbrée
+  acajou sculpté: acajou, sculpté
+  émail piquée d'or: émail, piqué, or
+  satin broché: satin, broché
+  fer poli: fer, poli
+  bois sculpté et peint: bois, sculpté, peint
+  laque usé: laque, usé
+  dentelle d'or: dentelle, or
+  bois laqué: bois, laqué
+  bois de fer sculpté: bois de fer, sculpté
+  fond bleu fouetté: fond bleu, fouetté
+  soie brochée: soie, brochée
+  bronze argenté: bronze, argenté
+  cuivre fondu: cuivre, fondu
+  cuivre doré et gravé: cuivre, doré, gravé
+  bronzes ciselés et dorés: bronze, ciselé, doré
+  laque aventuriné: laque, aventuriné
+  craquelé gris: craquelé, gris
+  nacre ajourée: nacre, ajourée
+  fer repoussé: fer, repoussé
+  bronze doré et ciselé: bronze, doré, ciselé
+  faïence décorée en camaïeu bleu: faïence, décorée, camaïeu bleu
+  cuir gaufré: cuir, gaufré
+  argent doré et gravé: argent, doré, gravé
+  décorée de peinture: décorée, peinture
+  marqueterie de bois: marqueterie, bois
+  wood marquetry: marqueterie, bois
+  dorées: doré
+  marqueterie de bois satiné: marqueterie, bois, satiné
+  velours brodé: velours, brodé
+  vermeil ciselé: vermeil, ciselé
+  matte gilded bronze: bronze, doré
+  sculptées: sculpté
+  bronze fondu: bronze, fondu
+  émaillé d'épargne: émaillé, épargne
+  or repoussé: or, repoussé
+  émaillé d'épargne et doré: émaillé, épargne, doré
+  peint et doré: peint, doré
+  argent découpé: argent, découpé
+  carved wood: bois, sculpté
+  mahogany: acajou
+  filigrane d'argent doré: filigrane, argent, doré
+  peinture en grisaille sur fond noir: peinture, grisaille
+  bois pétrifié: bois, pétrifié
+  verre granité: verre, granité
+  vermeil repoussé: vermeil, repoussé
+  tortoiseshell and copper marquetry: écaille, cuivre, marqueterie
+  reflet métalliques mordorés: métal, mordoré
+  acier ciselé: acier, ciselé
+  sculptés en bas-relief: sculpté
+  bois sculpté à jour et doré: bois, sculpté, doré
+  ivoire teinté: ivoire, teinté
+  rehaussée d'or: rehaussé, or
+  métal doré: métal, doré
+  cuivre doré et ciselé: cuivre, doré, ciselé
+  marbre brèche violette: marbre, brèche
+  or guilloché: or, guilloché
+  or et argent: or, argent
+  drap d'argent: drap, argent
+  marqueterie de bois à fleur: marqueterie de bois
+  dentelle d'argent: dentelle, argent
+  bronze doré et argenté: bronze, doré, argenté
+  ciselées: ciselé
+  nacre de perle gravée: nacre de perle, gravé
+  fer damasquiné d'or: fer damasquiné, or
+  bronze platiné: bronze, platiné
+  d'argent et de soie: soie, argent
+  bordure émaillée: émaillé
+  bois laqué blanc: bois, laqué
+  argent battu et doré: argent, battu, doré
+  fleur gravées en relief: fleur, gravé
+  bronze rocaille doré or moulu: bronze, doré, or
+  porcelaine marbrée: porcelaine, marbrée
+  fer ciselé et doré: fer, ciselé, doré
+  bronze gravé et doré: bronze, gravé, doré
+  porcelaine polychrome et dorée: porcelaine, doré
+  grisaille rehaussées d'or: grisaille, rehaussé, or
+  bronze finement ciselé et doré: bronze, ciselé, doré
+  argent oxydé: argent, oxydé
+  argent doré et ciselé: argent, doré, ciselé
+  bronze verni: bronze, verni
+  écaillé marbrée: écaille, marbrée
+  nacre découpée: nacre, découpé
+  cristal taillé: cristal, taillé
+  bronze doré mat: bronze, doré
+  ébène sculpté: ébène, sculpté
+  lame gravée: lame, gravé
+  bois laqué et doré: bois, laqué, doré
+  bronze gravé: bronze, gravé
+  cuivre gravé et doré: cuivre, gravé, doré
+  velours pourpre brodé: velours, brodé
+  décor gravé: gravé
+  écaille piquée d'or: écaille, piqué, or
+  ornée de peinture: orné, peinture
+  terre cuite émaillée: terre cuite, émaillé
+  argent doré et repoussé: argent, doré, repoussé
+  céladon fleuri: céladon, fleuri
+  laque rouge sculpté: laque, sculpté
+  bois incrusté d'ivoire: bois, incrusté, ivoire
+  argent gravé et doré: argent, gravé, doré
+  broderie d'or et d'argent: broderie, or, argent
+  bois noir sculpté: bois, sculpté
+  faïence de faenza: faïence
+  cuivre découpé: cuivre, découpé
+  agate orientale sardonisée: agate, sardonisée
+  chiseled and gilded bronze: bronze, doré, ciselé
+  céladon craquelé: céladon, craquelé
+  d'or: or
+  sculptés et découpés à jour: sculpté, découpé
+  ornement ciselés: ciselé
+  bois d'ébène sculpté: ébène, sculpté
+  monture en argent doré: argent, doré
+  émail brun: émail
+  ciselée: ciselé
+  travail repoussé: repoussé
+  laque d'or: laque, or
+  cuivre laqué: cuivre, laqué
+  bas-relief sculpté: sculpté
+  verre gravé: verre, gravé
+  grisaille à carnation teintées: grisaille
+  or bruni: or, bruni
+  ivoire sculptée: ivoire, sculpté
+  ancienne porcelaine de sèvres plutôt tendre: porcelaine
+  fer ciselé: fer, ciselé
+  cuivre repoussé: cuivre, repoussé
+  satin de soie: satin, soie
+  filet de cuivre: cuivre
+  bronze rocaille: bronze
+  bois peint et doré: bois, peint, doré
+  faïence italienne: faïence
+  vieux saxe décoré au naturel: porcelaine
+  cire peinte: cire, peinte
+  agate orientale mamelonnée: agate, mamelonnée
+  or repoussé et ciselé: or, repoussé, ciselé
+  cuivre fondu et peli: cuivre, fondu, poli
+  cuivre doré or moulu: cuivre, doré, or
+  cuivre doré et repoussé: cuivre, doré, repoussé
+  varnished bronze: bronze verni
+  bois divers: bois
+  montée en or: or
+  corne gravée: corne, gravée
+  verre de venise filigrané d'émail blanc: glass, filigrane, émail
+  montés en argent: argent
+  peints: peint
+  fine monture en bronze doré: bronze, doré
+  émaillés: émaillé
+  pierre sculptée: pierre, sculpté
+  marqueterie de cuivre et d'étain: marqueterie, cuivre, étain
+  porcelaine mince de la chine: porcelaine mince
+  crystal: cristal
+  socle en marbre griotte: marbre griotte
+  finely chiseled and gilded bronze: bronze, doré, ciselé
+  argent doré et émaillé: argent, doré, émaillé
+  grès rouge vernissé: grès rouge, vernissé
+  blue turquin marble: marbre turquin
+  riche monture en bronze doré: bronze, doré
+  cuivre repoussé et ciselé: cuivre, repoussé, ciselé
+  émaillé sur or: émaillé, or
+  vieux saxe gaufré: porcelaine, gaufré
+  corne de cerf sculptée: corne de cerf, sculpté
+  ivoire découpé: ivoire, découpé
+  bois d'ébène incrusté: ébène, incrusté
+  brodé en or: brodé, or
+  bois d'ébène incrusté d'ivoire gravé: ébène, incrusté, ivoire, gravé
+  mother-of-pearl: nacre de perle
+  bois de fer découpé: bois de fer, découpé
+  batterie gravée: gravé
+  cristal de roche et bronze doré: cristal de roche, bronze, doré
+  bronze doré rocaille: bronze, doré
+  bronze finement ciselé et doré au mat: bronze, ciselé, doré au mat
+  filigrane d'émail blanc: filigrane, émail
+  red tortoiseshell: écaille
+  porcelaine dorée et rose: porcelaine, doré
+  métal incrusté: métal, incrusté
+  nacre gravée: nacre, gravé
+  gravées en creux: gravé en creux
+  argent ciselé et émaillé: argent, ciselé, émaillé
+  bois sculptée: bois, sculpté
+  cuivre découpé à jour: cuivre, découpé à jour
+  bronze doré et velours: bronze, doré, velours
+  repoussé et doré: repoussé, doré
+  incrustation de cuivre: incrusté, cuivre
+  argent émaillé et doré: argent, émaillé, doré
+  bronze incrusté de filet d'argent: bronze, incrusté, argent
+  menuiserie de chêne sculpté: chêne, sculpté
+  wood: bois
+  ornement gravés en relief: gravé
+  bronze tonkin: bronze
+  incrustation d'argent: argent, incrusté
+  bleu et rouge de cuivre sous couverte: bleu de cuivre, rouge de cuivre
+  corne sculptée: corne, sculpté
+  émail de limoge colorié et à paillon: émail de limoge à paillon
+  rinceau d'or: or
+  brodé en soie: soie, brodé
+  buis sculpté: bois, sculpté
+  filigrane d'argent émaillé: argent, émaillé, filigrane
+  porcelaine de chine émaillée bleu: porcelaine, émaillé
+  argent filigrané: argent, filigrane
+  panneau sculptés: sculpté
+  reliure peinte: peint
+  or ciselé et gravé: or, ciselé, gravé
+  émail bleu et blanc: émail
+  arabesque en or: arabesque, or
+  toile d'argent: toile, argent
+  marbre pentélique: marbre, pentélique
+  filet d'or: or
+  reflet métalliques rouge rubis: métal
+  monté en or: or
+  or avec émail: or, émail
+  rehaussé d'or: or, rehaussé
+  incrustation: incrusté
+  carved and gilded wood: bois, doré, sculpté
+  bois gravé: bois, gravé
+  filet dorés: doré
+  fer forgé et doré: fer, forgé, doré
+  verre sardonisé: verre, sardonisé
+  soie: soie
+  argent doré repoussé et ciselé: argent, doré, repoussé, ciselé
+  rouge de cuivre sous couverte: rouge de cuivre
+  métal blanc: métal
+  ancienne porcelaine de saxe décorée au naturel: porcelaine
+  bambou sculpté: bambou, sculpté
+  vermeil et argent: vermeil, argent
+  or ciselé et laqué: or, ciselé, laqué
+  émail piqué d'or: émail, piqué, or
+  bois sculpté peint et doré: bois, sculpté, doré
+  porcelaine de saxe coloriée: porcelaine
+  rouge antique sculpté: rouge antique, sculpté
+  acier gravé: acier, gravé
+  porcelaine laquée: porcelaine, laqué
+  montés en or: or
+  marqueterie de cuivre sur bois: marqueterie de cuivre, bois
+  white filigree: filigrane
+  argent ciselé et repoussé: argent, ciselé, repoussé
+  repoussés: repoussé
+  reflet métalliques: métal
+  corne de cerf sculpté: corne de cerf, sculpté
+  sculptées en relief: sculpté
+  finely chiseled and matte gilded bronze: bronze, doré, ciselé
+  fer grisaille: fer, grisaille
+  décor or: or
+  ancienne porcelaine tendre de sèvres: porcelaine
+  gravé en champlevé: gravé, émail, champlevé
+  acier damasquiné: acier, fer damasquiné
+  onyx gravé: onyx, gravé
+  ebony: ébène
+  acier bleui: acier, bleui
+  cuivre battu et doré: cuivre, battu, doré
+  porcelaine dorée et polychrome: porcelaine, doré, polychromé
+  verre opalisé: verre, opalisé
+  enameled: émaillé
+  bois de fer découpé à jour: bois de fer, découpé à jour
+  broderie de soie de couleur: soie, brodé
+  ivoire peint et doré: ivoire, peint, doré
+  gravés en creux: gravé
+  bronze doré et oxydé: bronze, doré, oxydé
+  rehaussé de bleu: rehaussé
+  cuivre rouge repoussé: cuivre rouge, repoussé
+  argent finement ciselé: argent, ciselé
+  satin cerise brodé: satin, brodé
+  velours imprimé: velours, imprimé
+  peinte sur émail: peinte, émail
+  couverte émaillée: couverte, émaillée
+  cire coloriée: cire, coloriée
+  verre antique fond bleu à ruban jaune et bleu turquoise: verre antique
+  revers marbré: marbré
+  incrustation d'étain: incrusté, étain
+  bois sculpté doré: bois, sculpté, doré
+  damas de soie paille: soie, paille
+  damasquinés d'or et d'argent: fer damasquiné, or, argent
+  laque fond or: laque, or
+  sculptés sur os: bone, sculpté
+  marbre blanc sculpté: marbre blanc, sculpté
+  brodée: brodé
+  haut relief sculpté: haut relief, sculpté
+  rinceau fleuris en or: rinceau, or
+  damasquinure d'or: damasquinure, or
+  verre blanc: verre
+  émail grisaille: émail, grisaille
+  cuivre gravé: cuivre, gravé
+  sculptés: sculpté
+  jaspe fleuri oriental: jaspe
+  jaspe fleuri: jaspe
+  jade gris: jade
+  filigrane doré: filigrane
+  vermis de martin: vernis de martin
+  marbre jaune de sienne: jaune de sienne
+  fût de colonne: colonne
+  morceau de jaspe rouge: jaspe
+  jaspe rouge: jaspe
+  marbre précieux: marbre
+  pâte dure: porcelaine à pâte dure
+  pate dure: porcelaine à pâte dure
+  pâte tendre: porcelaine à pâte tendre
+  pate tendre: porcelaine à pâte tendre
+  porcelaine émaillé: porcelaine
+  porcelaine de sèvres: porcelaine
+  vieux saxe: porcelaine
+  porcelaine de saxe: porcelaine
+  porcelaine de chine: porcelaine
+  ancienne porcelaine de sèvres: porcelaine
+  ancienne porcelaine de saxe: porcelaine
+  porcelaine tendre: porcelaine
+  bois noir: bois
+  moulu: or moulu
+  dorure: doré
+  jaspe sanguin: jaspe
+  agate orientale: agate
+  vieux chine: porcelaine
+  ancienne porcelaine: porcelaine
+  damasquiné: fer damasquiné
+  bas-relief: sculpté
+  verre incolore: verre
+  décor polychrome: polychrome
+  damas de soie: soie
+  porcelaine du japon: porcelaine
+  lapis-lazuli: lapis lazuli
+  lapis: lapis lazuli
+  ancienne porcelaine de chine: porcelaine
+  bois rose: bois de rose
+  filigrane blanc: filigrane
+  porcelaine céladon: porcelaine
+  marbre noir: marbre
+  émail de la famille verte: émail
+  champlevé: émail, champlevé
+  cuivre jaune: cuivre
+  verre de venise: glass
+  velours rouge: velours
+  laque noir: laque
+  émail bleu: émail 
+  jade vert: jade
+  mosaïque de florence: mosaïque
+  maiolique: maiolica
+  laque rouge: laque
+  laque de chine: laque
+  grenats: grenat
+  biscuit de sèvres: biscuit
+  étoffe de soie: soie
+  sèvres: porcelaine
+  émail blanc: émail
+  velours de gêne: velours
+  dorée: doré
+  albâtre oriental: albatre
+  vernis martin: vernis de Martin
+  porcelaine à pate dure: porcelaine
+  laque du japon: laque
+  brocatelle de soie: soie
+  perle baroque: perle
+  verre de venise incolore: glass
+  marbre bleu turquin: marble
+  tapisserie d'aubusson: tapisserie
+  bronze italien: bronze
+  corne de rhinocéros: corne
+  ancien sèvres: porcelaine
+  doré mat: doré
+  perle fines: perle
+  majolica: maiolica
+  aiolica: maiolica
+  vieux sèvres: porcelaine
+  agate-onyx: agate
+  porcelaine blanche: porcelaine
+  bois de palissandre: palissandre
+  patiné: patination
+  écaille rouge: écaille
+  velours cramoisi: velours
+  os: bone
+  céladon vert d'eau: porcelaine
+  serpentin: serpentin
+  porcelaine de berlin: porcelaine
+  marqueté: marqueterie
+  marbre vert de mer: marbre
+  émail de limoges: émail
+  écaille de tortue: écaille
+  lapis lazzuli: lapis lazuli
+  marbre blanc de carrare: marbre
+  porcelaine dure: porcelaine
+  faïence décorée en bleu: faïence
+  faïence de rouen: faïence
+  granit rose: granit
+  écaille noire: écaille
+  sculpté à jour: sculpté
+  bois amarante: amarante
+  lapis de sibérie: lapis lazuli
+  serpentin d'égypte: serpentin
+  bronze et marbre blanc: bronze, marbre blanc
+  serpentine verte: serpentin
+  lapis lamuli: lapis lazuli
+  serpentin vert d'égypte: serpentin
+  mosaique pavée: mosaique, pavé
+  laque aven-turine: aventurine
+  serpentine noble: serpentin
+  porcelaine rose: porcelaine
+  écaillé: écaille
+
+# Here are corrections to apply only for origins
+origin: 
+  china: chine
+  england: angleterre
+  germany: allemagne
+  japan: japon
+  saxony: saxe
+  faënza: faenza
+  india: inde
+  indian: inde
+  flanders: flandre
+  belgium: belgique
+  scotland: écosse
+  wien: vienne
+  albanais: albanie
+  allemand: allemagne
+  allemande: allemagne
+  anglais: angleterre
+  byzantine: byzance
+  chinois: chine
+  chinoise: chine
+  chinoises: chine
+  flamands: flandre
+  flamande: flandre
+  école flamande: flandre
+  flamand: flandre
+  florentin: florence
+  français: france
+  grec: grèce
+  hollandais: pays-bas
+  hollandaises: pays-bas
+  indien: inde
+  indienne: inde
+  russe: russie
+  suisses: suisse
+  turque: turquie
+  turques: turquie
+  romain: romaine
+  japonais: japon
+  milanais: milan
+  génois: gênes
+  gène: gênes
+  italiens: italie
+  portugais: portugal
+  croates: croatie
+  algérien: algérie
+  byzantines: byzance
+  hongrois: hongrie
+  anglaise: angleterre
+  florentine: florence
+  italien: italie
+  persan: iran
+  antiques: antique
+  orientales: orientale
+  louis xvi: france
+  louis xv: france
+  louis xiv: france
+  louis xiii: france
+  temps de louis xiii: france
+  temps de louis xiv: france
+  époque louis xv: france
+  époque louis xvi: france
+  temps de louis xvi: france
+  style louis xvi: france
+  époque louis xiii: france
+  époque louis xiv: france
+  époque de louis xiv: france
+  epoque louis xv: france
+  époque de louis xvi: france
+  epoque louis xvi: france
+  dix-septième siècle: ""
+  quatorzième siècle: ""
+  quinzième siècle: ""
+  seizième siècle: ""
+  xve siècle: ""
+  xvième siècle: ""
+  xvie siècle: ""
+  xviie siècle: ""
+  xviiie siècle: ""
+  fabrique d' urbino: urbino
+  école italienne: italie
+  manufacture de sèvres: sèvres
+  tonquin: vietnam
+  style hollandais: hollande
+  même époque: ""
+  "1610": ""
+  lorenzo bartolini: ""
+  florence ou faenza: florence, faenza
+  khang - hy ( 1662 - 1723 ): ""
+  henri ii: france
+  école lyonnaise: lyon
+  fabrique de faenza: faenza
+  école de: ""
+  style louis xv: france
+  "1570": ""
+  saint-thomas-d'aquin: ""
+  "1790": ""
+  mêmes fabrique et époque: ""
+  fabrique de caffagiollo: caffagiollo
+  pays - bas: hollande
+  jüri de saxe: saxe
+  kiew: kiev
+  grec - russe: grêce, russie
+  javanais: indonésie
+  kien - long ( 1736 - 1796 ): ""
+  diverses école: ""
+  jean de bologne: ""
+  style européen: europe
+  école allemande: allemagne
+  travaille chinois: chine
+  époque rococo: france
+  gêne: gênes
+  manufacture royale de florence: florence
+  idem: ""
+  collection fortuny: ""
+  "1602": ""
+  fabrique dite de pesaro: pesaro
+  fin du xve siècle: ""
+  palais japonais de dresde: dresd
+  limosin: limousin
+  charles x: france
+  époque de kien - long: ""
+  gréco-russe: grèce, russie
+  fabrique de castel durante: castel duranto
+  xvir * siècle: ""
+  travail moderne: ""
+  travail anglais: angleterre
+  grèce - russie: grèce, russie
+  onzième siècle: ""
+  palais de napoléon ier à san martino: france
+  fabrique de deruta: deruta
+  viennois: vienne
+  andrea della robbia: ""
+  chinese: chine
+  travail d' augsbourg: augsbourg
+  travail oriental: oriental
+  venice: venise
+  italiennes: italie
+  jacob: ""
+  époque de louis xv: france
+  persane: iran
+  kang - hy ( 1662 - 1722 ): ""
+  spain: espagne
+  napolitain: naples
+  marie de médicis: ""
+  antique gréco-égyptien: grèce, égypte
+  toscan: toscanne
+  tchîng - hoä ( 1465 - 1487 ): ""
+  tching - hod ( 1465 - 1488 ): ""
+  espagnol: espagne
+  urbino ou castel-durante: urbino, castel duranto
+  travail suisse du xviie siècle: suisse
+  du commencement du seizième siècle: ""
+  travail de nuremberg: nuremberg
+  égyptien: égypte
+  tchinh - hoa: ""
+  travail italien: italie
+  "1617": ""
+  école de janet: janet
+  italo-lyonnaise: italie, lyon
+  égyptiennes: égypte
+  égyptienne: égypte
+  tching - hoá ( 1465 - 1488 ): ""
+  ecole de: ""
+  empereur romains: ""
+  fabrique de pesaro: ""
+  siculo - arabe: ""
+  kien - long: ""
+  indiennes: inde
+  travail florentin du xvie siècle: florence
+  istlande: islande
+  travail flamand du xvie siècle: flandre
+  egypte: égypte
+  lyng - tchy: ""
+  st - pétersbourg: saint-pétersbourg
+  mêmes fabrication et époque: ""
+  egyptian: égypte
+  tong - king: ""
+  napolitaines: naples
+  grecque: grèce
+  vénitienne: venise
+  hispano - mauresque: espagne
+  turc: turquie
+  birman: birmanie
+  lyonnaise: lyon
+  italy: italie
+  mongol: mongolie
+  flandres: flandre
+  florance: florence
+  pays-bas: hollande
+  vénitien: venise
+  urbin: urbino
+  indou: inde
+  byzantin: byzance
+  bizantine: byzance
+  italienne: italie
+  luca della robbia: ""
+  hongroise: hongrie
+  portugaise: portugal
+  fontainebloux: fontainebleau
+  dresd: dresde
+  grêce: grèce
+  castel-durante: castel durante
+  castel duranto: castel durante
+  capo di monte: naples
+  flandre espagnole: flandre
+  géorgie turque: géorgie
+  fabrique étrusque: étrurie
+  étrusque: étrurie
+  italy: italie
+  orientaux: orient
+  oriental: orient
+  orientale: orient
+  malais: malaisie
+  romaine: rome
+  romains: rome
+  nord de la france: france
+  arabe: maghreb
+  caffagiollo: florence
+
+# Here are corrections to apply only for periods
+period: 
+  époque régence: régence
+
+# Here are corrections to apply only for authors
+author:
+  jacques callot noble lorrain,: jacques callot
+  robert joseph auguste (célèbre orfèvre: robert joseph auguste
+  ignace pleyel et c: ignace pleyel
+  p. j. david d’angers: david d'angers
+  gouttière: gouthière
+  gouthières: gouthière
+  boule: boulle
+  boullé: boulle
+  boulé: boulle
+  palissy: bernard palissy
+  bernard de palissy: bernard palissy
+  b. palissy: bernard palissy
+  boucher: françois boucher
+  léonard limousin: léonard limosin
+  léonard limoisin: léonard limosin
+  jean limousin: jean limosin
+  jehan limousin: jean limosin
+  berain: bérain
+  riesner: riesener
+  j. h. riesener: riesener
+  p. reymond: pierre reymond
+  narsès pénicaud: pénicaud
+  jean pénicaud: pénicaud
+  claudion: clodion
+  delafosse: de lafosse
+  lucca della robbia: luca della robbia
+  barbedeinne: barbedienne
+  tiomuir: thomire
+  callot jacques: jacques callot
+  p. courtois: pierre courtois
+  lepine: lépine
+  de naples: naples
+  à nuremberg.: nuremberg
