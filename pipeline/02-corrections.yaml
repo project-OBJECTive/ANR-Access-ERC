@@ -58,6 +58,7 @@ all:
 
 # Here are corrections to apply only for object types
 object_type:
+  écriteire: écritoire
   bas-relief rond: bas-relief
   coupe ovale: coupe
   petit bocal: bocal
@@ -117,6 +118,8 @@ object_type:
   
 # Here are corrections to apply only for material and techniques
 material_technique:
+  monture en bronze doré: bronze doré, bronze, doré
+  mosaique: mosaïque
   émaille: émail
   verre à pâte: verre
   faience: faïence
@@ -128,7 +131,7 @@ material_technique:
   sévigné: broche
   décoré: ""
   décorée: ""
-  bronze doré: "bronze, doré"
+  bronze doré: "bronze, doré, bronze doré"
   manuscrits: manuscrit
   manuscrites: manuscrit
   cuivre doré: "cuivre, doré"
@@ -539,8 +542,8 @@ material_technique:
   décor polychrome: polychrome
   damas de soie: soie
   porcelaine du japon: porcelaine
-  lapis-lazuli: lapis lazuli
-  lapis: lapis lazuli
+  lapis-lazuli: lapis-lazuli
+  lapis: lapis-lazuli
   ancienne porcelaine de chine: porcelaine
   bois rose: bois de rose
   filigrane blanc: filigrane
@@ -596,7 +599,7 @@ material_technique:
   marbre vert de mer: marbre
   émail de limoges: émail
   écaille de tortue: écaille
-  lapis lazzuli: lapis lazuli
+  lapis lazzuli: lapis-lazuli
   marbre blanc de carrare: marbre
   porcelaine dure: porcelaine
   faïence décorée en bleu: faïence
@@ -605,11 +608,11 @@ material_technique:
   écaille noire: écaille
   sculpté à jour: sculpté
   bois amarante: amarante
-  lapis de sibérie: lapis lazuli
+  lapis de sibérie: lapis-lazuli
   serpentin d'égypte: serpentin
   bronze et marbre blanc: bronze, marbre blanc
   serpentine verte: serpentin
-  lapis lamuli: lapis lazuli
+  lapis lamuli: lapis-lazuli
   serpentin vert d'égypte: serpentin
   mosaique pavée: mosaique, pavé
   laque aven-turine: aventurine
