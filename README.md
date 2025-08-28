@@ -18,3 +18,12 @@ Pipeline outputs are CSV files containing:
 
 The pipeline contains multiple Jupyter notebooks controled by a main makefile which handle order, notebooks groups, logs, files, ...
 
+## Imports
+
+## Analysis
+
+In the analysis folder, an exploratory analysis directed by researcher questions is present.
+
+### How to run
+
+The notebook can be launched by the makefile recipe "analyze" which creates a html file with all interactive charts.
