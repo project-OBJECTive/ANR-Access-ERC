@@ -142,7 +142,7 @@ class SPARQL:
             return rows
 
 
-    def insert(self, triples: List[tuple] | tuple, graph_uri: str | None = None, eta_fct: Callable = None) -> None:
+    def insert(self, triples: List[tuple] | tuple, graph_uri: str | None = None, eta_fct: Callable = None, with_inverse=True) -> None:
         """From a list (or unique) of triples, insert them (it) in the endpoint, in the given graph."""
 
         # If only a single triple is given, transform it into a list
@@ -152,8 +152,20 @@ class SPARQL:
         # Since inserts can be pretty huge, here we split them
         # in "smaller insert" of maximum 1k triples.
 
+        # Add-on to make them visible on Geovistory
+        if with_inverse:
+            blacklist = ['rdf:type', 'rdfs:label', 'rdfs:comment']
+            all_triples = []
+            for triple in triples:
+                if triple[1] not in blacklist and not triple[2].startswith("'"): 
+                    all_triples.append((triple[2], triple[1], triple[0]))
+                all_triples.append(triple)
+        else:
+            all_triples = triples
+
+        # Chunked all triples
         chunk_size = 1000
-        chunked_triples = [triples[i: i + chunk_size] for i in range(0, len(triples), chunk_size)]
+        chunked_triples = [all_triples[i: i + chunk_size] for i in range(0, len(all_triples), chunk_size)]
 
         # Prepare the query
         graph_sparql_open = "GRAPH " + self.prepare_uri(graph_uri) + " {" if graph_uri else ""
